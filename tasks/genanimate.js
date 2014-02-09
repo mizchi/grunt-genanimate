@@ -7,7 +7,7 @@
       var conf, done;
       conf = this;
       done = conf.async();
-      return genanimate.genanimate(this.options, done);
+      return genanimate.genanimate(this.options(), done);
     });
   };
 

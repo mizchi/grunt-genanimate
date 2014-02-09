@@ -3,4 +3,4 @@ module.exports = (grunt) ->
   grunt.registerTask 'genanimate', 'genanimate task', ->
     conf = @
     done = conf.async()
-    genanimate.genanimate @options, done
+    genanimate.genanimate @options(), done
